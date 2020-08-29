@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- import css -->
+    <link rel="stylesheet" href="../css/center.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <!-- import javascript -->
+    <script src="../javascript/utils-local-storage.js"></script>
+    <script src="../javascript/user-mock-data.js"></script>
+    <script src="../javascript/user-form.js"></script>
+  </head>
 
-<head>
-  <!-- import css -->
-  <link rel="stylesheet" href="../css/center.css">
-  <link rel="stylesheet" href="../css/form.css">
-  <!-- import javascript -->
-  <script src="../javascript/utils-local-storage.js"></script>
-  <script src="../javascript/user-mock-data.js"></script>
-  <script src="../javascript/user.js"></script>
-</head>
+  <body onload="onLoadFormEdit()">
+    <div class="center">
+      <a href="../../index.html">Home</a> &nbsp;&nbsp;
+      <a href="user-form.html">User Form</a> &nbsp;&nbsp;
+      <a href="user-table.html">User Table</a> &nbsp;&nbsp;
+      <a href="../../index.html">Exit</a>
+    </div>
 
-<body onload="onLoadFormEdit()">
+    <h2 class="center">User Form</h2>
 
-<div class="center">
-  <a href="../../index.html">Home</a> &nbsp;&nbsp;
-  <a href="user-form.html">User Form</a> &nbsp;&nbsp;
-  <a href="user-table.html">User Table</a> &nbsp;&nbsp;
-  <a href="../../index.html">Exit</a>
-</div>
-
-<h2 class="center">User Form</h2>
-
-<form onsubmit="event.preventDefault();onFormSubmit();" class="center">
-  <!-- fieldset do border -->
-  <fieldset>
-    <!-- Nickename -->
-    <label for="nickname">Nickname:</label>
-    <input type="text" id="nickname">
-    <br><br>
-    <!-- Password -->
-    <label for="password">Password:</label>
-    <input type="password" id="password">
-    <br><br>
-    <!-- First Name -->
-    <label for="first-name">Names:</label>
-    <input type="text" id="first-name">
-    <br><br>
-    <!-- Last Name -->
-    <label for="last-name">LastName:</label>
-    <input type="text" id="last-name"> 
-    <br><br>
-    <!-- Birthday -->
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday">
-    <br><br>
-    <!-- Email -->
-    <label for="email">Email:</label>
-    <input type="text" id="email">
-    <br><br>
-    <!-- Type -->
-    <label for="type">Type:</label>
-    <select id="type">
-      <option value="Administrator">Administrator</option>
-      <option value="Manager">Manager</option>
-      <option value="Developer">Developer</option>
-      <option value="Tester">Tester</option>
-    </select>
-    <br><br>
-    <!-- Button -->
-    <input type="submit" value="Submit">
-    </fieldset>
-</form>
-
-</body>
+    <form onsubmit="event.preventDefault();onFormSubmit();" class="center">
+      <!-- fieldset do border -->
+      <fieldset>
+        <!-- Nickename -->
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" />
+        <br /><br />
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <br /><br />
+        <!-- First Name -->
+        <label for="first-name">Names:</label>
+        <input type="text" id="first-name" />
+        <br /><br />
+        <!-- Last Name -->
+        <label for="last-name">LastName:</label>
+        <input type="text" id="last-name" />
+        <br /><br />
+        <!-- Birthday -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" />
+        <br /><br />
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" />
+        <br /><br />
+        <!-- Type -->
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="Administrator">Administrator</option>
+          <option value="Manager">Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="Tester">Tester</option>
+        </select>
+        <br /><br />
+        <!-- Button -->
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
 </html>
