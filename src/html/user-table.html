@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- import css -->
+  <link rel="stylesheet" href="../css/center.css">
+  <link rel="stylesheet" href="../css/table.css">
+  <!-- import javascript -->
+  <script src="../javascript/user-mock-data.js"></script>
+  <script src="../javascript/utils-local-storage.js"></script>
+  <script src="../javascript/user.js"></script>
+</head>
+
+<body onload="updateTable()">
+
+<div class="center">
+  <a href="../../index.html">Home</a> &nbsp;&nbsp;
+  <a href="user-form.html">User Form</a> &nbsp;&nbsp;
+  <a href="user-table.html">User Table</a> &nbsp;&nbsp;
+  <a href="../../index.html">Exit</a>
+</div>
+
+<h2 class="center">User Table</h2>
+
+<table id="table" class="table-center">
+  <tr>
+    <th>Index</th>
+    <th>Nickname</th>
+    <th>Password</th>
+    <th>Names</th>
+	<th>LastName</th>
+	<th>Birthday</th>
+	<th>Email</th>
+	<th>Type</th>
+	<th>Edit</th>
+	<th>Delete</th>
+  </tr>
+  <tr>
+    <td>-1</td>
+    <td>Admin</td>
+    <td>secret122</td>
+	<td>Admin</td>
+	<td>Admin</td>
+	<td>1990-01-01</td>
+	<td>Admin@Gmail.com</td>
+	<td>Administrator</td>
+	<td><button onclick="onEdit()">Edit</button></td>
+    <td><button onclick="onDelete()">Delete</button></td>
+  </tr>
+</table>
+
+</body>
+</html>
