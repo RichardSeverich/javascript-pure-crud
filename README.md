@@ -26,11 +26,11 @@ This project is a very basic example of crud only with browser supported java-sc
 </p>
 
 <p align="center">
-  <img src="documentation/user-form.jpg">
+  <img src="documentation/product-form.jpg">
 </p>
 
 <p align="center">
-  <img src="documentation/user-table.jpg">
+  <img src="documentation/product-table.jpg">
 </p>
 
 ## Contributing
