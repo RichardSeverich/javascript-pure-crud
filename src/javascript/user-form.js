@@ -1,5 +1,5 @@
 function onFormSubmit() {
-  setUpStorage();
+  setUpStorageUsers();
   let edit = localStorage.getItem("edit");
   let formData = readFormData();
   let arrayUsers = getData("arrayUsers");

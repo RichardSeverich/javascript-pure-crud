@@ -1,6 +1,6 @@
 function storeData(variableName, data) {
-  let stringifyArrayUsers = JSON.stringify(data);
-  localStorage.setItem(variableName, stringifyArrayUsers);
+  let stringifyArray = JSON.stringify(data);
+  localStorage.setItem(variableName, stringifyArray);
 }
 
 function getData(variableName) {
@@ -9,12 +9,22 @@ function getData(variableName) {
   return data;
 }
 
-function setUpStorage() {
+function setUpStorageUsers() {
   let array = localStorage.getItem("arrayUsers");
   if (array === null || array.length == 2) {
     localStorage.setItem("edit", "false");
     let arrayUsers = [];
     storeData("arrayUsers", arrayUsers);
-    defaultData();
+    defaultDataUsers();
+  }
+}
+
+function setUpStorageProducts() {
+  let array = localStorage.getItem("arrayProducts");
+  if (array === null || array.length == 2) {
+    localStorage.setItem("edit", "false");
+    let arrayProducts = [];
+    storeData("arrayProducts", arrayProducts);
+    defaultDataProducts();
   }
 }

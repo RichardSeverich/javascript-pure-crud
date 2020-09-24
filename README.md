@@ -25,6 +25,14 @@ This project is a very basic example of crud only with browser supported java-sc
   <img src="documentation/user-table.jpg">
 </p>
 
+<p align="center">
+  <img src="documentation/user-form.jpg">
+</p>
+
+<p align="center">
+  <img src="documentation/user-table.jpg">
+</p>
+
 ## Contributing
 
 1. Fork it!

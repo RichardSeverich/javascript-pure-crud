@@ -1,5 +1,5 @@
-function updateTable() {
-  setUpStorage();
+function updateTableUser() {
+  setUpStorageUsers();
   let arrayUsers = getData("arrayUsers");
   console.log(arrayUsers);
   let index = 0;
