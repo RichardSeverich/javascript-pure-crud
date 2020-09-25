@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- import css -->
+    <link rel="stylesheet" href="../css/center.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <!-- import javascript -->
+    <script src="../javascript/utils-local-storage.js"></script>
+    <script src="../javascript/mock-data.js"></script>
+    <script src="../javascript/product-form.js"></script>
+  </head>
+
+  <body onload="onLoadFormEdit()">
+    <div class="center">
+      <a href="../../index.html">Home</a> &nbsp;&nbsp;
+      <a href="product-form.html">Product Form</a> &nbsp;&nbsp;
+      <a href="product-table.html">Product Table</a> &nbsp;&nbsp;
+      <a href="user-form.html">User Form</a> &nbsp;&nbsp;
+      <a href="user-table.html">User Table</a> &nbsp;&nbsp;
+      <a href="../../index.html">Exit</a>
+    </div>
+
+    <h2 class="center">Product Form</h2>
+
+    <form onsubmit="event.preventDefault();onFormSubmit();" class="center">
+      <!-- fieldset do border -->
+      <fieldset>
+        <!-- Nickename -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br /><br />
+        <!-- Password -->
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" />
+        <br /><br />
+        <!-- First Name -->
+        <label for="price">Price:</label>
+        <input type="text" id="price" />
+        <br /><br />
+        <!-- Button -->
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-function defaultData() {
+function defaultDataUsers() {
   let arrayUsers = [];
   let user1 = {
     nickname: "LionelMessi",
@@ -52,3 +52,26 @@ function defaultData() {
   arrayUsers.push(user5);
   storeData("arrayUsers", arrayUsers);
 }
+
+function defaultDataProducts() {
+  let arrayProducts = [];
+  let product1 = {
+    name: "coca cola",
+    quantity: "26",
+    price: "10",
+  };
+  arrayProducts.push(product1);
+  let product2 = {
+    name: "fanta",
+    quantity: "30",
+    price: "10",
+  };
+  arrayProducts.push(product2);
+  let product3 = {
+    name: "sprite",
+    quantity: "15",
+    price: "10",
+  };
+  arrayProducts.push(product3);
+  storeData("arrayProducts", arrayProducts);
+} 
