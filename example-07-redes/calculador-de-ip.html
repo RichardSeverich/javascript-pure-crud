@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- import css -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- import javascript -->
+  <script src="./script-calculadora-ip.js"></script>
+</head>
+
+<body>
+  <h2 class="center">Calculadora de ip</h2>
+  <div class="form-container">
+    <div class="form-group-ip">
+      <label for="ip">Direccion Ip</label>
+      <input type="text" id="ip" name="ip"></input>
+    </div>
+    <div class="form-group-mascara">
+      <label for="mascara-number">Mascara</label>
+      <input type="number" id="mascara-number" name="mascara-number"></input>
+    </div>
+    <div class="boton-calcular">
+      <button onclick="handleClick()"> Calcular</button>
+    </div>
+  </div>
+  <div class="contenedor-tabla-padre">
+    <div class="contenedor-tabla" id="contenedor-tabla-0"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-1"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-2"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-3"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-4"></div>
+  </div>
+</body>
+
+</html>

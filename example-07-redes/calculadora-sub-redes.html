@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- import css -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- import javascript -->
+  <script src="./script-calculadora-ip.js"></script>
+  <script src="./script-calculadora-sub-redes.js"></script>
+</head>
+
+<body>
+  <h2 class="center">Calculadora de Sub Red (VLSM) (Variable-Length Subnet Mask)</h2>
+  <div class="form-container">
+    <div class="form-group-ip">
+      <label for="ip">Direccion de red</label>
+      <input type="text" id="ip" name="ip"></input>
+    </div>
+    <div class="form-group-mascara">
+      <label for="mascara-number">Mascara</label>
+      <input type="number" id="mascara-number" name="mascara-number"></input>
+    </div>
+    <div class="form-group-cantidad-bits-prestados">
+      <label for="cantidad-bits-prestados">Cantidad de bits prestados</label>
+      <select id="cantidad-bits-prestados" name="cantidad-bits-prestados">
+        <option value="1">1 bit ---> 2^1 ---> 2 sub redes</option>
+        <option value="2">2 bit ---> 2^2 ---> 4 sub redes</option>
+        <option value="3">3 bit ---> 2^3 ---> 8 sub redes</option>
+        <option value="4">4 bit ---> 2^4 ---> 16 sub redes</option>
+        <option value="5">5 bit ---> 2^5 ---> 32 sub redes</option>
+        <option value="6">6 bit ---> 2^5 ---> 64 sub redes</option>
+        <option value="7">7 bit ---> 2^7 ---> 128 sub redes</option>
+        <option value="8">8 bit ---> 2^8 ---> 256 sub redes</option>
+      </select>
+    </div>
+    <div class="boton-calcular">
+      <button onclick="handleCalcularSubRedes()"> Calcular</button>
+    </div>
+  </div>
+  <div class="contenedor-tabla-padre">
+    <div class="contenedor-tabla" id="contenedor-tabla-0"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-1"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-2"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-3"></div>
+    <div class="contenedor-tabla" id="contenedor-tabla-4"></div>
+  </div>
+</body>
+
+</html>

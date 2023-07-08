@@ -1,0 +1,16 @@
+/*.cuadrado {
+    width: 25%;
+    height: 0;
+    padding-top: 25%;
+    position: relative;
+    background: red;
+}*/
+
+/*div:hover {
+    background-color: green;
+}*/
+table,
+th,
+td {
+    border: 1px solid;
+}
